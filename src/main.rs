@@ -2,26 +2,11 @@ use std::io;
 use std::io::{Read, Write};
 
 fn main() {
-    let mut base = String::new();
-    let mut indice = String::new();
+    let x = true;
+    let y = false;
 
-    let bas: f64;
-    let ind: f64;
-
-    print!("Entre com o valor base...");
-    io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut base).unwrap();
-    bas = base.trim().parse::<f64>().unwrap();
-
-    print!("Entre com o valor do indice...");
-    io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut indice).unwrap();
-    ind = indice.trim().parse::<f64>().unwrap();
-
-    println!();
-    println!("Expoenciação  = {:8.2}", bas.powf(ind));
-    println!("Raiz quadrada = {:8.2}", bas.sqrt());
-    println!("Raiz cúbica   = {:8.2}", bas.cbrt());
+    println!("O valor lógico verdadeiro de x ...: {}", x);
+    println!("O valor lógico verdadeiro de y ...: {}", y);
 
     println!();
     print!("Tecle <Enter> para encerrar...");
