@@ -1,5 +1,5 @@
 use std::io;
-use std::io::Write;
+use std::io::{Read, Write};
 
 fn main() {
     let mut dividendo = String::new();
@@ -26,4 +26,9 @@ fn main() {
     println!();
     println!("Quociente = {:8}", quo);
     println!("Resto     = {:8}", res);
+
+    println!();
+    print!("Tecle <Enter> para encerrar...");
+    io::stdout().flush().unwrap();
+    io::stdin().read(&mut [0u8]).unwrap();
 }
