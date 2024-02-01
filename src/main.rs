@@ -9,7 +9,7 @@ fn main() {
     println!("O valor lógico verdadeiro de y ...: {}", y);
 
     println!();
-    print!("Tecle <Enter> para encerrar...");
+    print!("Tecle <Enter> para encerrar que coisa não...");
     io::stdout().flush().unwrap();
     io::stdin().read(&mut [0u8]).unwrap();
 }
