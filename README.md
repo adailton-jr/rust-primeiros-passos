@@ -1,2 +1,2 @@
-##primeiros passos com rust lang
-projeto c02ex06 
+# Primeiros passos com Rust  
+### Capítulo 2 - projeto (c02ex06) 
